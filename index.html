@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Starbucks</title>
+    <style>
+         .container{
+            height:auto;
+            width:100%;
+            position:absolute;
+         }
+         .header{
+           position:fixed;
+           top: 0px;
+           left: 0px;
+           width:100%;
+           height: 70px;
+           background-color: black;
+           opacity:0.7;
+           z-index:1;
+          }
+          
+          .option a{
+            padding-top: 15px ;
+           float:right;
+           margin-right: 55px;
+           font-size: 30px; 
+           color:#d19f17;
+            text-decoration: none;
+          }
+
+
+/* intro start from here  */
+
+         .intro{
+            position:relative;
+            width: 100%;
+            height: 1200px;
+            background-image:url(./antique-cafe-bg-01.jpg);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         }
+
+         .A{
+        position: absolute;
+        top:150px;
+        left:400px;
+        width:450px;
+        height:200px;
+        line-height: 25px;
+        background-color: black;
+        opacity:0.8;
+        color:#d19f17;
+        text-align: center;
+        font-size:large;
+        border-radius: 10px;
+    }
+    .B{
+        position: absolute;
+        top:400px;
+        left:400px;
+        width:450px;
+        height:500px;
+        color: white;
+        padding: 40px;
+        font-size: large;
+        line-height: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+        opacity:0.7;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .C{
+        position: absolute;
+        top:925px;
+        left:475px;
+        width:300px;
+        height:100px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        background-color:black;
+        opacity:0.7;
+        border-radius: 10px;
+
+    }
+
+
+    /* menue start from here  */
+
+
+     .menu{
+        position:relative;
+         height: 1200px;
+         width:100%;
+         background-image: url(./antique-cafe-bg-02.jpg);
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+    .top-menu{
+        position: absolute;
+        top:150px;
+        left:325px;
+        height:100px;
+        width: 600px;
+        background-color: white;
+        text-align: center;
+        padding-top:15px;
+        font-size: 50px;
+        color: dimgrey;
+        opacity: 0.9;
+        border-radius: 10px;
+        box-sizing: border-box;
+     }
+
+     .left-menu{
+        position: absolute;
+        top:300px;
+        left:50px;
+        height:700px;
+        width:500px;
+        background-color: #544639;;
+        opacity:1;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 0;
+     }
+     .right-menu{
+        position: absolute;
+        top:300px;
+        right:50px;
+        height:700px;
+        width:500px;
+        background-color: #544639;;
+        opacity:1;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+     } 
+
+       .keeper{
+         position:relative;
+         margin-top: 10px;;
+         height:150px;
+         width:430px;
+         box-sizing: border-box;
+         padding: 10px;
+       }
+       .keeperB{
+         position:relative;
+         margin-top: 10px;;
+         height:150px;
+         width:430px;
+         box-sizing: border-box;
+         padding: 10px;
+         
+       }
+       .part1{
+         position:relative;
+         height:130px;
+         width:180px;
+         padding:5px;
+         box-sizing: border-box;
+         display: inline-block;
+       }
+       .part11{
+         float: right;
+       }
+
+       .part2{
+         position:absolute;
+         padding: 5px;
+         color: white;
+         height:130px;
+         width:180px;
+         box-sizing: border-box;
+         display: inline-block;
+       }
+       .part22{
+         position:absolute;
+         padding: 5px;
+         color: white;
+         height:130px;
+         width:180px;
+         box-sizing: border-box;
+         display: inline-block;
+       }
+       .part22 h2{
+        font-weight: 100;
+       }
+
+     /* about start from here   */
+
+     .about{
+        height:900px;
+        width:100%;
+        background-image: url(./antique-cafe-bg-03.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        }
+        .about-desc h1{
+            color:#006666;
+        }
+     .about-desc{
+        position:relative;
+        top:200px;
+        left:55%;
+        height:450px;
+        width:450px;
+        background-color: white;
+        opacity:0.7;
+        border-radius: 10px;
+        padding:20px;
+        font-size: 20px;
+        line-height:2rem;
+     }
+
+     .about-desc-contact{
+        position:relative;
+        top:240px;
+        left:55%;
+        width:200px;
+        height:70px;
+        background-color: #006666;;
+        border-radius: 10px;
+        color:white;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        box-sizing: border-box;
+     }
+
+   /* contact start from here  */
+
+
+      .contact{
+           height:800px;
+           width:100%;
+           background-image: url(./antique-cafe-bg-04.jpg);
+           background-attachment: fixed;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+         }
+       .contact-us{
+        position:relative;
+        top:200px;
+        left:5%;
+        height:500px;
+        width:500px;
+        background-color: white;
+        opacity:0.7;
+        border-radius: 10px;
+        padding: 25px;
+        box-sizing: border-box;
+        font-size:20px;
+        line-height: 35px;
+       }
+       .contact-us a{
+        color: #006666;
+        text-decoration: none;
+       }
+       .map{
+        position:absolute;
+        top:410px;
+        left: 33%;
+        width:35%;
+        height:70px;
+        background-color: #006666;;
+        border-radius: 10px;
+        padding: 15px;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+       }
+       .map a{
+        color: white;
+       }
+         .form{
+           position:relative;
+           top:-300px;
+           left:55%;
+           height:500px;
+           width:500px;
+           background-color: black;
+           opacity:0.5 ;
+           border-radius: 10px;
+           color: white;
+           font-size: 20px;
+           box-sizing: border-box;
+           padding: 60px;
+     }
+     input{
+        background-color: black;
+        width: 350px;
+        height:30px;
+        margin: 15px;
+        color: #d19f17;
+        font-size: 20px;
+        
+        
+     }
+     textarea{
+        background-color: black;
+        width: 350px;
+        height:200px;
+        margin: 15px;
+        color: #d19f17;
+        font-size: 15px;
+        font-size: 20px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="option"><a href="#contact4">Contact</a></div>
+            <div class="option"><a href="#about3">About</a></div>
+            <div class="option"><a href="#menu2">Menu</a></div>
+            <div class="option"><a href="#intro1">Intro</a> </div>
+        </div>
+    
+    
+     <!-- intro start from here   -->
+    
+    
+        <div class="intro" id="intro1">
+             <div class="A">
+                <h1>Starbucks Cafe</h1> <br>
+                Your daily mind booster
+             </div>
+             <div class="B">
+                Adding Moments of Perfect Sip <br>
+                a life full of Coffee Moments <br>
+                Awake Every Senses <br>
+                Excellence taste in Coffee <br>
+                Ride your Best life moments <br>
+                Shine the Morning <br>
+                Enjoy the Mornings <br>
+                Bringing Joy of Friendships <br>
+                A new Moments of Imagine <br>
+                Coffee with a New Passion <br>  <br>
+                If you have any question, please <span style="color: #d19f17;">send us a <br> message</span>.
+             </div>
+             <div class="C">
+                <img src="" alt=""> Let's explore...
+             </div>
+        </div>
+    
+    
+    
+    <!-- menu start from here  -->
+    
+    
+    
+        <div class="menu" id="menu2">
+             <div class="top-menu">
+                 Special Starbucks Menue
+             </div>
+             <div class="left-menu">
+                  <div class="keeper">
+                     <div class="part1"><img src="./menu-item-1.jpg" alt=""></div>
+                     <div class="part2">
+                        <h2>
+                           <span style="color: #FC6;;">Hot Cappuccino</span>
+                        </h2>
+                        <h3>Medium Rs. 320 <br>
+                        Large Rs. 640</h3>
+                        </div>
+                  </div>
+                  <div class="keeper">
+                     <div class="part1"><img src="./menu-item-2.jpg" alt=""></div>
+                     <div class="part2">
+                        <h2>
+                           <span style="color: #FC6;;">Hot Americano</span>
+                        </h2>
+                        <h3>Small Rs. 240 <br>
+                            Large Rs. 560</h3>
+                        </div>
+                  </div>
+                  <div class="keeper">
+                     <div class="part1"><img src="./menu-item-3.jpg" alt=""></div>
+                     <div class="part2">
+                        <h2>
+                           <span style="color: #FC6;;">Hot Latte</span>
+                        </h2>
+                        <h3>Medium Rs. 540 <br>
+                            Large Rs.750</h3>
+                        </div>
+                  </div>
+                  <div class="keeper">
+                     <div class="part1"><img src="./menu-item-4.jpg" alt=""></div>
+                     <div class="part2">
+                        <h2>
+                           <span style="color: #FC6;;">Hot Espresso <br>
+                            Hot Chocolate</span>
+                        </h2>
+                        <h3>Size Medium Rs.450 <br>
+                             Large Rs. 670</h3>
+                        </div>
+                  </div>
+             </div>
+             <div class="right-menu">
+               <div class="keeperB">
+                  <div class="part11"><img src="./menu-item-5.jpg" alt=""></div>
+                  <div class="part22">
+                     <h2>
+                        <span style="color: #FC6;;">Iced Cappuccino</span>
+                     </h2>
+                     <h3>Small Rs. 340 <br>
+                        Large Rs. 680</h3>
+                  </div>
+               </div>
+               <div class="keeperB">
+                  <div class="part11"><img src="./menu-item-6.jpg" alt=""></div>
+                  <div class="part22">
+                     <h2>
+                        <span style="color: #FC6;;">Iced Americano</span>
+                     </h2>
+                     <h3>Medium Rs. 320 <br>
+                     Large Rs. 640</h3>
+                  </div>
+               </div>
+               <div class="keeperB">
+                  <div class="part11"><img src="./menu-item-7.jpg" alt=""></div>
+                  <div class="part22">
+                     <h2>
+                        <span style="color: #FC6;;">Iced Milky Latte</span>
+                     </h2>
+                     <h3>Medium Rs. 320 <br>
+                     Large Rs. 640</h3>
+                  </div>
+               </div>
+               <div class="keeperB">
+                  <div class="part11"><img src="./menu-item-8.jpg" alt=""></div>
+                  <div class="part22">
+                     <h2>
+                        <span style="color: #FC6;;">
+                            Iced Espresso <br>
+                            Iced Mocha</span>
+                     </h2>
+                     <h3>Small Rs.230 <br>
+                         Large Rs.450</h3>
+                  </div>
+               </div>
+             </div>
+        </div>
+    
+    
+    <!-- about start from here  -->
+    
+             <div class="about" id="about3">
+                <div class="about-desc">
+                   <span style="color:#006666;font-size: 50px;">About our cafe</span> <br><br>
+                    “To capture the character of our community, boiling down its stocks, foraging its plants, and showcasing its produce; all in an attempt to capture a time and a space in the confines of a plate, but more often in a series of plates.” <br><br>
+
+                    If you wish to support us, please make a little donation via PayPal. That would be very helpful. Another way is to tell your friends about Starbucks website. Thank you.
+                </div>
+                <div class="about-desc-contact">Contact</div>
+                
+             </div>
+
+
+     <!-- contact start from here  -->
+    
+    
+         <div class="contact" id="contact4">
+            <div class="contact-us">
+                <span style="color:#006666;font-size: 50px;">Contact Us</span> <br> <br>
+               Address : 100 Saket, Old Palasia 452001 <br>
+               City Or Area : Indore <br>
+               State : Madhya Pradesh <br>
+               Phone : 0731 4285050 <br>
+               Cuisines : Fast Food <br>
+               Landmark : Old Palasia <br>
+               Tel: <span style="color: #006666;">010-020-0340</span> <br>
+               Email: <a href="mailto">info@company.com</a> <br>
+
+                <div class="map"><a href="https://www.google.com/maps/@22.7145323,75.8882394,15z?entry=ttu" target="_blank">Open Maps</a></div>
+                
+            </div>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="name"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea placeholder="message" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+         </div>
+    </div>
+
+</body>
+</html>
